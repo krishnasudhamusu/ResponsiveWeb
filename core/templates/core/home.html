@@ -1,0 +1,660 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Krishna Sudhamusu</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#academic" class="nav__link">Academics</a></li>
+                <li class="nav__item"><a href="#asset" class="nav__link">Assets</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
+    </nav>
+
+</header>
+<main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Krishna Sudhamusu</span><br></h1>
+            <h2 class="home__subtitle">Django Web
+                developer , UX/UI designer ,<br>
+                Python FullStack Programmer</h2>
+
+            <a href="#contact" style="margin-right: 16px;" class="button con">Contact</a>
+            <a download="Resume.pdf" href="{% static 'core/data/resumeuse.pdf' %}" class="button down"><i
+                    class='bx bxs-download'></i>&nbsp;&nbsp;&nbsp;Download Resume</a>
+        </div>
+
+        <div class="home__social">
+            <a href="https://github.com/krishnasudhamusu" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+            <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+
+
+        </div>
+
+        <div class="home__img">
+
+            <img src="{% static 'core/images/might2.png' %}" alt="">
+        </div>
+    </section>
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="{% static 'core/images/aboutme.png' %}" alt="">
+            </div>
+
+            <div>
+                <h2 class="about__subtitle">I'am Krishna Sudhamusu</h2>
+                <p class="about__text">I have 3 years
+                    experience as Program Analyst at <b class="text-warning">Cognizant Technologies,India. </b></p>
+                <br>
+
+                <p class="about__text">I worked as <b class="text-warning">SAP Basis Consultant</b> where I was
+                    responsible for Database
+                    Backup Monitoring and Scheduling,Transport Management,System Refresh Activities,Performing Kernel
+                    Updates,System and database restart during planned outages and other major administration tasks.I am
+                    trained and have significant knowledge in <b class="text-warning">SAP SD Functional</b> Module as
+                    well.
+                </p>
+                <br>
+                <p class="about__text">I am an artistic person.
+
+                    I always enjoyed creating meaningful and impact ful experience for audience through my art form,be
+                    it dance,photography or animation.
+                    I always wanted to do something creative in my professional life and just wasn't sure what exactly
+                    it is .
+                    After a lot of careful consideration and exploration of several domains like <b
+                            class="text-warning">web development,</b> Front end development, I found <b
+                            class="text-warning">UX/UI design </b>very fascinating .
+                    Quickly I started gathering Information about UI design and did courses for UX/UI design in Udemy,
+                    Coursera . I devoted all my free time to learn everything I could and eventually started to make
+                    wireframes and website design for a photography team. The feedback has been very encouraging.
+                    I am seeking to leverage my learning and passion towards a career as a <b class="text-warning">UX/UI
+                        designer</b>. If given an opportunity, I am willing to put in all my efforts to deliver the best
+                    and prove myself in a short time. </p>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="bd-grid">
+            <div>
+                <h3 class="text-left "><u><b>POPOPINION (Django Website) </b></u></h3>
+
+                <p>POPOPINION is a social site where you can share your <b>own thoughts and
+                    opinions</b>
+                    honestly,
+                    about
+                    ongoing social issues without the fear of being judged .
+
+                    You can post your opinion via <b>Confessions</b> and have
+                    a rational and healthy
+                    discussion about it with others in comments section.
+                    You can easily ask a question via <b>Polls</b> and see the results instantly
+                    to know how many actually agree with you.
+                    Popopinion Polls allow you to vote in on questions posted by other people as well.</p>
+                <p>This way we can understand there is definitely more than a single way to
+                    interpret what’s
+                    going on around us,
+                    so we can use this to our advantage and understand and learn if needed from others
+                    perspective . We all grow and evolve by gaining new insights, opinions and perspectives.
+                </p>
+                <br>
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://youtube.com/embed/wPHoB4pfck8?autoplay=1&mute=1"
+                            width="900" height="450"
+                            frameborder="0"></iframe>
+                </div>
+                <br>
+                <p>POPOPINION is the major project I did after gaining some expertise and serious
+                    knowledge in
+                    django
+                    .
+                    This project covers all the major django concepts I have learnt . The source code for this
+                    project is <a href="https://github.com/krishnasudhamusu/POPOPINION"> available here . </a>
+                </p>
+
+            </div>
+            <div>
+                <h3 class="text-left "><u><b>Other Django Projects</b></u></h3>
+                <p>I wanted to learn <b>web development</b> and learnt HTML, CSS and Django through
+                    Udemy Courses,
+                    YouTube
+                    videos, Online articles and Stackoverflow.
+                    Once I gained enough knowledge I started working on small projects that helped me research and
+                    learn more in-depth about <b>Django</b> . </p>
+                <p>These are the projects I worked on to get hands-on experience during the learning
+                    phase .<br>
+                    <br>
+                <ul>
+                    <li><a href="https://github.com/krishnasudhamusu/CustomerSite"> Customer management System</a>
+                    </li>
+                    <li><a href="https://github.com/krishnasudhamusu/WebBlog">A Web Blog</a></li>
+                    <li><a href="https://github.com/krishnasudhamusu/ToDoApp"> Simple To Do List</a></li>
+                    <li><a href="https://github.com/krishnasudhamusu/Craigslist"> Craigslist</a></li>
+                    <li><a href="https://github.com/krishnasudhamusu/Website"> My Portfolio </a></li>
+                </ul>
+                </p>
+                <br>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="{% static 'core/images/customer site1.JPG' %}"
+                             alt="...">
+                        <h5 class="take"><b>Admin Dashboard </b></h5>
+
+
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'core/images/customersite2.JPG' %}"
+                             alt="...">
+
+                        <h5 class="take"><b>Various functions admin can handle </b></h5>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'core/images/web blog1.JPG' %}"
+                             alt="...">
+                        <h5 class="take"><b>Web Blog Page</b></h5>
+                        <p></p>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'core/images/blog2.JPG' %}"
+                             alt="...">
+                        <h5 class="take"><b>Create New Blog Post</b></h5>
+                        <p></p>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'core/images/blog3.JPG' %}"
+                             alt="...">
+                        <h5 class="take"><b>Update Your Profile</b></h5>
+                        <p></p>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'core/images/craigslist.JPG' %}"
+                             alt="...">
+                        <h5 class="take"><b>Craigslists Search Page</b></h5>
+                        <p></p>
+                    </div>
+                    <div class="work__img">
+                        <img src="{% static 'core/images/github.JPG' %}"
+                             alt="...">
+                        <h5 class="take">My Git Hub Account</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <h3 class="text-left "><u><b>UX/UI Design </b></u></h3>
+
+                            <p>As I got a hold of Web development, I also wanted to learn about the user experience of a
+                                website or app.
+                                I recently started researching theoretical and practical concepts of <b>UI/UX design</b>
+                                and
+                                found
+                                it very fascinating.
+                                I have done a few UX/UI design courses in Udemy and Coursera and started applying them
+                                practically.</p>
+                            <p>I designed few apps and websites implementing all the design elements I have
+                                learned(please
+                                see below).
+                                I am willing to learn more and design websites,wire frames,case studies and
+                                apps in my professional career. If given an opportunity, I would like to apply my UX/UI
+                                design skills in a result oriented
+                                environment to learn, grow and contribute my best to the success of the
+                                organisation.</p>
+                            <br>
+                            <div class="iframe-container">
+                                <video width="900" style="width: 100% ; height:auto;" controls autoplay muted>
+                                    <source src="{% static 'core/videos/photo.mp4' %}" type="video/mp4"/>
+                                </video>
+
+                            </div>
+
+                            <div>
+                                <h5 class="text-left "><u><b>Food Delivery Website</b></u></h5>
+
+                                <video width="900" style="width: 100% ; height:auto;" autoplay loop muted>
+                                    <source src="{% static 'core/videos/foodweb.mp4' %}" type="video/mp4"/>
+                                </video>
+                            </div>
+
+                            <div>
+                                <h5 class="text-left "><u><b>Food Delivery App UI</b></u></h5>
+
+
+                                <img width="900" src="{% static 'core/images/food2x.png' %}"
+                                     style="width: 100% ; height:auto;">
+
+
+                                <h5 class="text-left "><u><b>Rating</b></u></h5>
+                                <video width="900" style="width: 100% ; height:auto;" autoplay loop muted>
+                                    <source src="{% static 'core/videos/rate.mp4' %}" type="video/mp4"/>
+                                </video>
+
+                            </div>
+
+                            <div>
+                                <h5 class="text-left "><u><b>Shoespot website UI</b></u></h5>
+
+                                <video width="900" style="width: 100% ; height:auto;" autoplay loop muted>
+                                    <source src="{% static 'core/videos/shoespot.mp4' %}" type="video/mp4"/>
+                                </video>
+
+                            </div>
+
+                            <div>
+                                <h5 class="text-left "><u><b>Shoespot App UI</b></u></h5>
+
+                                <img width="900" src="{% static 'core/images/shoespot.png' %}"
+                                     style="width: 100% ; height:auto;">
+
+                                <h5 class="text-left "><u><b>Animation</b></u></h5>
+
+                                <img width="900" height="675" src="{% static 'core/images/animation.gif' %}"
+                                     style="width: 100% ; height:auto;">
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+            <div>
+                <h2 class="skills__subtitle">Profesional Skills</h2>
+                <p class="skills__text">Expertise in Python web Development,with knowledge of Django Web Framework.Good
+                    understanding of
+                    User Psychology and User Experience.Designing User Interface based on Clients Insights.</p>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-django skills__icon'></i>
+                        <span class="skills__name">Django</span>
+                    </div>
+                    <div class="skills__bar skills__django">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Advanced</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-python skills__icon'></i>
+                        <span class="skills__name">Python full stack development</span>
+                    </div>
+                    <div class="skills__bar skills__python">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Advanced</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxs-paint skills__icon'></i>
+                        <span class="skills__name">UX/UI Design</span>
+                    </div>
+                    <div class="skills__bar skills__ux">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <span class="skills__name">HTML</span>
+                    </div>
+                    <div class="skills__bar skills__html">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Advanced</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills__icon'></i>
+                        <span class="skills__name">CSS</span>
+                    </div>
+                    <div class="skills__bar skills__css">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Advanced</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon'></i>
+                        <span class="skills__name">JAVASCRIPT</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-figma skills__icon'></i>
+                        <span class="skills__name">Figma / AdobeXD</span>
+                    </div>
+                    <div class="skills__bar skills__figma">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Advanced</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl- skills__icon'></i>
+                        <span class="skills__name">SAP BASIS</span>
+                    </div>
+                    <div class="skills__bar skills__SAP">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl- skills__icon'></i>
+                        <span class="skills__name">SAP SD</span>
+                    </div>
+                    <div class="skills__bar skills__SAPS">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="{% static 'core/images/coder.png' %}" alt="" class="skills__img">
+            </div>
+        </div>
+    </section>
+    <section class="academic section" id="academic">
+        <h2 class="section-title">Academic Qualifications</h2>
+        <div class="academic__container bd-grid">
+
+            <div>
+                <img src="{% static 'core/images/certificate.png' %}" alt="" class="skills__img">
+            </div>
+
+            <div class="table-box">
+                <div class="table-row table-head">
+                    <div class="table-cell first-cell">
+                        <p>Educational Qualification</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>Institution</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>Percentage or GPA</p>
+
+                    </div>
+                    <div class="table-cell last-cell">
+                        <p>Year of passing</p>
+
+                    </div>
+
+                </div>
+                <div class="table-row">
+                    <div class="table-cell first-cell">
+                        <p>B.Tech ( Computer Science )</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>Amrita University , Coimbatore</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>7.21</p>
+
+                    </div>
+                    <div class="table-cell last-cell">
+                        <p>2012-2016</p>
+
+                    </div>
+
+                </div>
+                <div class="table-row">
+                    <div class="table-cell first-cell">
+                        <p>Intermediate</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>NRI College , Vijayawada</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>95.5%</p>
+
+                    </div>
+                    <div class="table-cell last-cell">
+                        <p>2009-2012</p>
+
+                    </div>
+
+                </div>
+                <div class="table-row">
+                    <div class="table-cell first-cell">
+                        <p>SSC or 10th standard</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>New Era School , Khammam</p>
+
+                    </div>
+
+                    <div class="table-cell">
+                        <p>93.5%</p>
+
+                    </div>
+                    <div class="table-cell last-cell">
+                        <p>2008-2009</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="assets section" id="asset">
+        <h2 class="section-title">Assets</h2>
+        <div class="assets__container bd-grid">
+            <ul>
+                <li class="main-one"><u><b>Can Easily Adapt</b></u></li>
+                <ul>
+                    <li class="side-one">I can adapt to any new technology and can excel my technical skills through
+                        continuous
+                        learning.
+                    </li>
+                </ul>
+                <li class="main-one"><u><b>Timely completion of tasks</b></u></li>
+                <ul>
+                    <li class="side-one">Got appreciation for my work in the company project for being punctual and
+                        completing tasks
+                        before deadlines.
+                    </li>
+                </ul>
+                <li class="main-one"><u><b>Leadership Skills</b></u></li>
+                <ul>
+                    <li class="side-one">Led a dance team in college and our team won 1st prize in college fest ,
+                        choreographed
+                        and performed in Cognizant events as well .
+                    </li>
+                </ul>
+
+                <li class="main-one"><u><b>agile learner</b></u></li>
+
+                <ul>
+                    <li class="side-one">I have the ability and willingness to learn from experience and subsequently
+                        apply
+                        that learning efficiently.
+                    </li>
+                </ul>
+                <li class="main-one"><u><b>Embrace challenges</b></u></li>
+                <ul>
+                    <li class="side-one">I Embrace challenges with enthusiasm and recognise that they are the best
+                        opportunities to grow and discover strengths I never knew I had .
+                    </li>
+                </ul>
+                <li class="main-one"><u><b>artistic person</b></u></li>
+                <ul>
+                    <li class="side-one">I am a <a href="https://www.youtube.com/watch?v=F0M9i24iuSo"> dancer </a> , I
+                        click
+                        photos , I edit and animate videos . I have learnt DSLR
+                        photography ,Adobe After effects,
+                        Adobe Premiere Pro and Adobe Photoshop on my own to feed my hungry artistic side .
+                    </li>
+                </ul>
+
+                <li class="main-one"><u><b>I am a Creative Thinker</b></u></li>
+                <ul>
+                    <li class="side-one">I am self-motivated to try things creatively . I have
+                        choreographed a dance sequence for my team with footballs , which is first of its kind in our
+                        college fests.
+                    </li>
+                </ul>
+                <li class="main-one"><u><b>Good communication skills</b></u></li>
+                <ul>
+                    <li class="side-one">I have the ability to closely collaborate with other teams . Active listening ,
+                        Story telling , pitching a
+                        compelling vision and clearly communicating are my strengths as well.
+
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <div>
+                <p class="contact__text">
+                    <b>If you like my work . Please Contact me to hire me .</b>
+                </p>
+
+                <form action="{% url 'contact' %}" method="POST" class="contact__form">
+                    {% csrf_token %}
+
+
+                    <input type="text" placeholder="Enter Your Name" class="contact__input" id="inputName"
+                           name="name"/>
+
+
+                    <input type="email" placeholder="Enter Your Email" class="contact__input" id="inputEmail"
+                           name="email" required/>
+
+
+                    <input type="text" placeholder="Enter Your Subject" class="contact__input" id="inputSubject"
+                           name="subject"/>
+
+
+                    <textarea type="text" class="contact__input" id="inputTextarea"
+                              name="message" cols="0" rows="5"
+                              required></textarea>
+
+
+                    <input type="submit" value="Submit" class="contact__button button">
+                </form>
+            </div>
+
+            <div>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class='bx bxs-map edit'></i>
+                        <p class="contact__side" style="text-align: center;"><b>Hyderabad , Telangana , India</b></p>
+
+
+                    </li>
+                    <li>
+                        <i class='bx bxs-phone-call edit'></i>
+                        <p class="contact__side" style="text-align: center;"><b>+91 9597850477</b></p>
+
+                    </li>
+                    <li>
+                        <i class='bx bx-mail-send edit'></i>
+                        <p class="contact__side" style="text-align: center;"><b>krishnasudhamusu@gmail.com</b></p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer__title">Krishna Sudhamusu</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/krishna_sudhamusu/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+
+</main>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="{% static 'core/js/main.js' %}"></script>
+</body>
+</html>
